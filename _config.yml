@@ -1,7 +1,11 @@
 title: Ethan Doherty
-description: Wireless systems, LLM evaluation, security operations.
-baseurl: ""
+tagline: Wireless systems, LLM evaluation, security operations
+description: >-
+  Terrain-aware link prediction, year-scale network simulation, and
+  LLM calibration. MS Computer Science, Khoury College, Northeastern.
 url: "https://edoherty2017.github.io"
-theme: minima
+baseurl: ""
+permalink: /:year/:month/:day/:title/
 plugins:
   - jekyll-feed
+exclude: [README.md]

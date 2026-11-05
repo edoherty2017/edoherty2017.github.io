@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="wrap">
+  <section class="hero">
+    <h1 class="hero-t">{{ site.title }}</h1>
+    <div class="ridge" aria-hidden="true">
+      <svg viewBox="0 0 800 54" preserveAspectRatio="none" role="presentation" focusable="false">
+        <path d="M0 48 L58 34 L96 40 L150 18 L196 30 L242 12 L286 26 L330 6 L372 22 L418 14 L470 32 L516 20 L566 36 L614 24 L664 40 L712 28 L760 42 L800 34 L800 54 L0 54 Z" fill="var(--ridge-fill)"/>
+        <path d="M0 48 L58 34 L96 40 L150 18 L196 30 L242 12 L286 26 L330 6 L372 22 L418 14 L470 32 L516 20 L566 36 L614 24 L664 40 L712 28 L760 42 L800 34" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+      </svg>
+    </div>
+    <div class="hero-b">{{ content }}</div>
+  </section>
+  <section class="posts">
+    <h2 class="eyebrow">Writing</h2>
+    <ol class="plist">
+    {%- for post in site.posts -%}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+        {%- if post.description %}<p>{{ post.description }}</p>{% endif -%}
+      </li>
+    {%- endfor -%}
+    </ol>
+  </section>
+</div>
