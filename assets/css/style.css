@@ -101,6 +101,23 @@ img{max-width:100%;height:auto}
 .prose table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.92rem}
 .prose th,.prose td{border-bottom:1px solid var(--rule);padding:.5rem .6rem;text-align:left}
 
+/* index */
+.toc{margin:2.4rem 0 3rem;padding:1.4rem 1.5rem;background:var(--surface);
+  border:1px solid var(--rule);border-left:2px solid var(--accent);border-radius:3px}
+.toc p{margin:0}
+.toc-t{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.19em;text-transform:uppercase;
+  color:var(--ink-faint)}
+.toc-t strong{color:var(--ink-faint)!important;font-weight:500}
+.toc-s{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--accent);margin:1.1rem 0 .3rem}
+.toc-s em{color:var(--accent)}
+.toc ol{margin:.8rem 0 0;padding-left:1.5rem;font-size:.93rem;line-height:1.5}
+.toc li{margin:.42rem 0;color:var(--ink-faint)}
+.toc li::marker{color:var(--ink-faint);font-family:var(--font-mono);font-size:.8em}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+.toc a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.prose h2{scroll-margin-top:1.5rem}
+
 /* figures: charts on light plates, photographs bled dark */
 .prose p > img{display:block;width:100%;border-radius:3px}
 .prose p:has(> img){margin:2.4rem 0 .55rem}
