@@ -101,6 +101,12 @@ img{max-width:100%;height:auto}
 .toc a{color:var(--ink);text-decoration:none}
 .toc a:hover{text-decoration:underline;text-underline-offset:.15em}
 
+/* references */
+.prose h2#references + p,.prose h3 + p{color:var(--ink-faint);font-style:italic}
+.prose h2#references ~ ol{font-size:1.02rem;line-height:1.4;padding-left:1.9rem}
+.prose h2#references ~ ol li{margin:.6rem 0;color:var(--ink-soft)}
+.prose h3{font-weight:500;font-size:1.2rem;text-align:center;margin:2.4rem 0 1rem}
+
 /* figures */
 .prose p > img{display:block;width:100%}
 .prose p:has(> img){margin:2.4rem 0 .5rem}
