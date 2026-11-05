@@ -1,0 +1,7 @@
+title: Ethan Doherty
+description: Wireless systems, LLM evaluation, security operations.
+baseurl: ""
+url: "https://edoherty2017.github.io"
+theme: minima
+plugins:
+  - jekyll-feed
